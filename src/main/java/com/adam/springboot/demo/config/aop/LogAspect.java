@@ -1,4 +1,4 @@
-package com.adam.springboot.demo.aop;
+package com.adam.springboot.demo.config.aop;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;

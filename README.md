@@ -19,8 +19,8 @@
 ======
 
     基于spring mvc注解。
-    Exception统一管理。(暂无)
-    shiro权限管理。(暂无)
+    Exception统一管理。
+    shiro权限管理。
     aop日志记录。
 
 4、调度
