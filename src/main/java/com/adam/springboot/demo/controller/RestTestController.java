@@ -50,8 +50,7 @@ public class RestTestController {
     public String putUser(@PathVariable Integer id, @ModelAttribute User user) {
         // 处理"/users/{id}"的PUT请求，用来更新User信息
         User u = users.get(id);
-        u.setName(user.getName());
-        u.setAge(user.getAge());
+        u.setUsername(user.getUsername());
         users.put(id, u);
         return "success";
     }

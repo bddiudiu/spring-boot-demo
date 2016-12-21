@@ -24,6 +24,7 @@ public class LogAspect {
 
     ThreadLocal<Long> startTime = new ThreadLocal<>();
 
+    //TODO 此处需要修改包路径
     @Pointcut("execution(public * com.adam.springboot.demo.controller.*.*(..))")
     public void webLog(){}
 

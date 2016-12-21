@@ -53,6 +53,17 @@ spring:
     auto: true
     proxy-target-class: false
 
+  mail:
+    default-encoding: utf-8
+    host: smtp.qq.com
+    username: 178263961
+    password: pjnbwjchtexlbicf
+    properties:
+      mail_smtp_auth: true
+      mail_smtp_starttls_enable: true
+      mail_smtp_starttls_required: true
+
+
 #shiro:
 #  realm-class: com.adam.springboot.demo.config.shiro.UserRealm
 

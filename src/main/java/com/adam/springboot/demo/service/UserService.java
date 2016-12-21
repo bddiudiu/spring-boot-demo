@@ -1,6 +1,7 @@
 package com.adam.springboot.demo.service;
 
 import com.adam.springboot.demo.dao.UserMapper;
+import com.adam.springboot.demo.model.Permission;
 import com.adam.springboot.demo.model.User;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,15 @@ public class UserService {
             PageHelper.startPage(user.getPage(), user.getRows(), "id");
         }
         return userMapper.selectAll();
+    }
+
+    public User findByUserName(String userName){
+        User user = new User();
+        user.setUsername(userName);
+        return userMapper.selectOne(user);
+    }
+
+    public List<Permission> getPermissionsByUserName(String username){
+        return userMapper.getPermissionsByUserName(username);
     }
 }

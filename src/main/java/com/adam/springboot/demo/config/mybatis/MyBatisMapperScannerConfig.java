@@ -25,9 +25,11 @@ public class MyBatisMapperScannerConfig {
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
+        //TODO 此处需要修改包路径
         mapperScannerConfigurer.setBasePackage("com.adam.springboot.demo.dao");
         Properties properties = new Properties();
         // 这里要特别注意，不要把MyMapper放到 basePackage 中，也就是不能同其他Mapper一样被扫描到。
+        //TODO 此处需要修改包路径
         properties.setProperty("mappers", "com.adam.springboot.demo.config.mybatis.MyMapper");
         properties.setProperty("notEmpty", "false");
         properties.setProperty("IDENTITY", "MYSQL");
