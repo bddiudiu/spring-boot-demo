@@ -99,11 +99,6 @@ public class HelloController {
     }
 
 
-    //    String endpoint = "http://oss-cn-shanghai.aliyuncs.com";
-//    String accessKeyId="LTAIvp3YE4aZ9Hzm";
-//    String accessKeySecret="VrW4PS4FcpddLHK1wMFhWE4e1R2uoR";
-//    String bucketName="ntghx";
-
     public static final String ROOT = "/Users/adam/Documents/images";
 
     @RequestMapping("upload")
