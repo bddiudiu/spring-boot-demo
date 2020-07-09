@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
         <!-- mysql -->
-        <mysql.version>5.1.21</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <!-- druid -->
         <druid.version>1.0.26</druid.version>
         <!-- shiro版本号 -->
