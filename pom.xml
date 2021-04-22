@@ -23,7 +23,7 @@
         <druid.version>1.0.26</druid.version>
         <!-- shiro版本号 -->
         <shiro.version>1.2.4</shiro.version>
-        <mybatis.version>3.3.0</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <fastjson.version>1.2.9</fastjson.version>
         <mapper.version>3.3.4</mapper.version>
         <commons.version>3.2.1</commons.version>
